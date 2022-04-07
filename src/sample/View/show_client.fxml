@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.show_clientController">
+   <children>
+      <Label fx:id="nameLabel" layoutX="48.0" layoutY="68.0" prefHeight="46.0" prefWidth="226.0" text="Label">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="phoneLabel" layoutX="48.0" layoutY="122.0" text="Label">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label fx:id="emailLabel" layoutX="48.0" layoutY="161.0" text="Label">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label fx:id="countryLabel" layoutX="48.0" layoutY="197.0" text="Label">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label fx:id="companyLabel" layoutX="48.0" layoutY="233.0" text="Label">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <ListView fx:id="showList" layoutX="278.0" prefHeight="362.0" prefWidth="322.0" />
+      <ComboBox fx:id="showComboBox" layoutX="278.0" layoutY="362.0" prefHeight="26.0" prefWidth="322.0" promptText="Выберите" />
+      <Button fx:id="returnButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="&lt;" />
+      <Button fx:id="alloweButton" disable="true" layoutX="35.0" layoutY="337.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="100.0" text="Разрешить" />
+      <Button fx:id="cancelButton" disable="true" layoutX="143.0" layoutY="337.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="100.0" text="Запретить" />
+      <Button fx:id="freezButton" disable="true" layoutX="35.0" layoutY="301.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="100.0" text="Заморозить" />
+      <Button fx:id="openButton" disable="true" layoutX="143.0" layoutY="301.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="100.0" text="Разморозить" />
+   </children>
+</AnchorPane>

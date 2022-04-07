@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="sample.Controllers.administrator_viewController"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <MenuBar layoutY="7.0" prefHeight="26.0" prefWidth="600.0">
+            <menus>
+                <Menu mnemonicParsing="false">
+                    <items>
+                        <MenuItem fx:id="exit" mnemonicParsing="false" text="Выйти" />
+                    </items>
+                    <graphic>
+                        <Label fx:id="nameLable" prefHeight="17.0" prefWidth="214.0" />
+                    </graphic>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <ListView fx:id="showList" layoutY="33.0" prefHeight="332.0" prefWidth="394.0" />
+        <ComboBox fx:id="chComboBox" layoutX="14.0" layoutY="365.0" prefHeight="26.0" prefWidth="370.0" promptText="Выбор" />
+        <Button fx:id="approveButton" layoutX="455.0" layoutY="95.0" mnemonicParsing="false" text="Разрешить " />
+        <Button fx:id="cancelButton" layoutX="455.0" layoutY="132.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="78.0" text="Отказ" />
+        <Button fx:id="cancellation" layoutX="455.0" layoutY="172.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="78.0" text="Отмена" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.user_viewController">
+   <children>
+      <ListView fx:id="showListView" layoutY="27.0" prefHeight="327.0" prefWidth="318.0" />
+      <Button fx:id="make_accountButton" layoutX="357.0" layoutY="56.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="127.0" text="Открыть счёт " />
+      <Button fx:id="make_installment_planButton" layoutX="475.0" layoutY="126.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="93.0" text="Рассрочки " />
+      <Button fx:id="transferButton" layoutX="357.0" layoutY="92.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="108.0" text="Перевод" />
+      <Button fx:id="make_creditButton" layoutX="358.0" layoutY="126.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="93.0" text="Кредиты" />
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false">
+            <items>
+              <MenuItem fx:id="exitMenuitem" mnemonicParsing="false" text="Выйти" />
+            </items>
+               <graphic>
+                  <Label fx:id="nameLabel" prefHeight="25.0" prefWidth="255.0" />
+               </graphic>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <ComboBox fx:id="showComboBox" layoutX="14.0" layoutY="361.0" prefHeight="25.0" prefWidth="296.0" />
+      <TextField fx:id="countField" layoutX="505.0" layoutY="56.0" prefHeight="25.0" prefWidth="62.0" promptText="Вклад" />
+      <Button fx:id="blockButton" layoutX="356.0" layoutY="329.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="101.0" text="Блокировка" />
+      <Button fx:id="unblockButton" layoutX="473.0" layoutY="329.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="101.0" text="Разблокировка" />
+      <Button fx:id="zpButton" layoutX="356.0" layoutY="293.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="218.0" text="Зарплатный проект " />
+   </children>
+</AnchorPane>
